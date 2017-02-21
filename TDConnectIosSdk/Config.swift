@@ -20,7 +20,7 @@ import Foundation
 /**
 Configuration object to setup an OAuth2 module
 */
-open class Config {
+open class Config : NSObject {
     /**
     Applies the baseURL to the configuration.
     */

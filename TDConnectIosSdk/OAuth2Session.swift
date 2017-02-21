@@ -19,7 +19,7 @@ import Foundation
 /**
 The protocol that an OAuth2 Session modules must adhere to and represent storage of oauth specific metadata. See TrustedPersistantOAuth2Session and UntrustedMemoryOAuth2Session as example implementations
 */
-public protocol OAuth2Session {
+@objc public protocol OAuth2Session {
 
     /**
     The account id.

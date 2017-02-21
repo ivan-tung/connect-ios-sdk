@@ -147,11 +147,11 @@ open class TelenorConnectConfig: Config {
 /**
 An account manager used to instantiate, store and retrieve OAuth2 modules.
 */
-open class AccountManager {
+open class AccountManager : NSObject {
     /// List of OAuth2 modules available for a given app. Each module is linked to an OAuth2Session which securely store the tokens.
     var modules: [String: OAuth2Module]
 
-    init() {
+    override init() {
         self.modules = [String: OAuth2Module]()
     }
 
